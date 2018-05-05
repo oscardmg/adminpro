@@ -13,16 +13,7 @@ import {NopagefoundComponent} from "./shared/nopagefound/nopagefound.component";
 
 
 const appRoutes: Routes =  [
-  {
-    path: '' ,
-    component: PagesComponent ,
-    children: [
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'progress', component: ProgressComponent },
-      { path: 'graficas1', component: Graficas1Component },
-      { path: '', redirectTo: '/dashboard', pathMatch: 'full' }, // cualquier ruta va a direccionar al dashboard
-    ]
-  },
+
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
 
