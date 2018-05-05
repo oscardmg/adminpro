@@ -4,13 +4,17 @@ import { NgModule } from '@angular/core';
 // Modulos
 import {PagesModule} from "./pages/pages.module";
 
+// Rutas
+import {APP_ROUTES} from "./app.routes";
+
+
+// Componentes ppales
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import {APP_ROUTES} from "./app.routes";
 import { RegisterComponent } from './login/register.component';
 
 
-//rutas
 
 
 @NgModule({
