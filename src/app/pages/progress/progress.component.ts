@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressComponent implements OnInit {
 
+  progreso: number = 50;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  cambiarValor(valor: number) {
+
+    if(this.progreso + valor > 100) {
+      this.progreso = 100;
+      return;
+    }
+
+    if(this.progreso + valor < 0) {
+      this.progreso = 0;
+      return;
+    }
+
+    this.progreso += valor;
+  }
 }
